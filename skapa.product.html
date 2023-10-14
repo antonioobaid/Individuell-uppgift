@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./skapa.product.css">
+    <title>om oss</title>
+</head>
+<body>
+    <header> 
+        <h1>MODANISA</h1>
+    </header>
+    <main class="container">
+        <div class="list-container">
+            <nav class="menu-list">
+                <ul>
+                  <li><a href="./Hem.html">Hem</a></li>
+                  <li><a href="./alla.product.html">Alla produkter</a></li>
+                  <li><a href="./skapa.product.html">Skapa en produkt</a></li>
+                  <li><a href="./om.oss.html">Om oss</a></li>
+                </ul>
+              </nav>
+        </div>
+        <div class="form-container">
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-name">Namn på produkten:</label>
+                    <input type="text" id="event-name" name="event-name" placeholder="produkt Namn" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Datum:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-description">Kort beskrivning:</label>
+                    <textarea id="event-description" name="event-description" rows="4"  required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="event-pris">Pris  $ : </label>
+                    <input type="number" id="event-price" name="event-price" placeholder="Produktpris" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-images">Ladda upp bilder (max 4):</label>
+                    <input type="file" id="event-images" name="event-images[]" accept="image/*" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="event-category">Välj kategori:</label>
+                    <select id="event-category" name="event-category" required>
+                        <option value="nöje">Jeans</option>
+                        <option value="utbildning">Jackor</option>
+                        <option value="afterwork">shorts</option>
+                        <option value="afterwork">Tröjor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Skapa Nyheten</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    </body>
+    </html>

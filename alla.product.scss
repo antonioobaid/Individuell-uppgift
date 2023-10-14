@@ -1,0 +1,212 @@
+$font-family: 'Arial', 'Helvetica', sans-serif;
+
+* {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgb(134, 79, 163);
+  position: fixed;
+  border: 1px solid rgb(183, 176, 176);
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 12px;
+    font-weight: 600;
+    color: rgb(255, 254, 254);
+  }
+}
+
+main {
+  width: 100%;
+  padding-top: 4.5rem;
+  display: flex;
+}
+
+.content {
+  width: 20%;
+  background-color: rgba(222, 184, 135, 0.285);
+  border: 1px solid rgb(164, 155, 155);
+
+  .menu-list {
+    padding: 2rem 0rem 2rem 2rem;
+
+    li {
+      font-size: 1.5rem;
+      margin: 1rem;
+      list-style: none;
+
+      a {
+        color: rgb(105, 101, 101);
+        transition: 0.7s ease;
+
+        &:hover {
+          color: gold;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .content {
+    width: 22%;
+
+    .menu-list li {
+      font-size: 1.2rem;
+    }
+  }
+
+  .nyheter {
+    width: 78%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .content {
+    width: 26%;
+
+    .menu-list li {
+      font-size: 1.1rem;
+    }
+
+    .nyheter {
+      width: 74%;
+      padding-left: 30px;
+
+      .event {
+        width: 250px;
+        height: auto;
+
+        .image-nyheter {
+          width: 250px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .content {
+    width: 40%;
+
+    .menu-list li {
+      font-size: 1rem;
+    }
+
+    .nyheter {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .content {
+    width: 52%;
+
+    .menu-list li {
+      font-size: 0.8rem;
+    }
+
+    .nyheter {
+      width: 48%;
+      padding-left: 50px;
+
+      .event {
+        width: 200px;
+        height: auto;
+
+        .image-nyheter {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+    width: 60%;
+
+    .menu-list li {
+      font-size: 0.6rem;
+    }
+
+    .nyheter {
+      width: 30%;
+      padding-left: 50px;
+    }
+  }  
+}
+
+.nyheter {
+  width: 80%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 335px);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  gap: 2rem 3.7rem;
+  background-color: rgb(240, 235, 235);
+
+  .event {
+    border: 1px solid rgb(80, 77, 77);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+
+    .image-nyheter {
+      width: 333px;
+      height: 333px;
+      border: 1px solid rgb(111, 103, 103);
+    }
+
+    .event-datum,
+    .event-name,
+    .event-description,
+    .kategori,
+    a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .event-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .event-datum {
+      font-size: 0.8rem;
+      font-weight: 100;
+    }
+
+    .kategori {
+      font-size: 1.2rem;
+      color: rgb(41, 51, 51);
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      padding-bottom: 10px;
+      transition: 0.7s ease;
+
+      &:hover {
+        color: gold;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
